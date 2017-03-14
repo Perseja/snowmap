@@ -23,6 +23,7 @@ class SnMap {
         });
 
         google.maps.event.addListener(marker, 'click', () => {
+            //TODO: create infowindow only once for one marker
              const infoWindow = new google.maps.InfoWindow({
                  content: `${snMarker.title} ${snMarker.description ? `<br/>${snMarker.description}` : ''}`
              });

@@ -25,9 +25,16 @@ class SnMarker {
     }
 
     get description() {
+        //return `${this.siteLink ? `${this.siteLink}` : ''}
+        //        ${this.desc ? `</br>${this.desc}` : ''}`
         return `${this.siteLink ? `${this.siteLink}</br>${this.desc}` : `${this.desc}`}`
     }
 
+    //get ab() {
+    //    this.a = 'a';
+    //    this.b = 'b';
+    //    return `${this.a ? `${this.a}</br>${this.b}` : `${this.b}`}`
+    //}
 }
 
 export default SnMarker;
